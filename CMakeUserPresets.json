@@ -2,10 +2,24 @@
   "version": 2,
   "configurePresets": [
     {
-      "name": "default",
+      "name": "default-linux",
       "inherits": "vcpkg",
       "environment": {
         "VCPKG_ROOT": "$env{HOME}/vcpkg"
+      }
+    },
+    {
+      "name": "default-mac",
+      "inherits": "vcpkg",
+      "environment": {
+        "VCPKG_ROOT": "$env{HOME}/vcpkg"
+      }
+    },
+    {
+      "name": "default-windows",
+      "inherits": "vcpkg",
+      "environment": {
+        "VCPKG_ROOT": "$env{USERPROFILE}/vcpkg"
       }
     }
   ]
